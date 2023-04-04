@@ -12,7 +12,7 @@ function TodoProvider(props)
         item: Todos,
         saveItem: saveTodos,
         loading,
-        error
+        error,
       } = useLocalStorage("TODOS_V1", []);
     
       const [searchValue, setSearchValue] = React.useState("");
